@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right top, #051937, #004d7a, #008793);
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 25px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            overflow: hidden; 
+            margin-top: 50px;
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(2px); 
+            z-index: -1;
+        }
+        .btn-social {
+            width: 100%;
+            margin: 5px;
+            height: 50px;
+        }
+
+        .btn-facebook {
+            background-color: #1877f2;
+            color: #fff;
+            border: none;
+        }
+
+        .btn-google {
+            background-color: #db4a39;
+            color: #fff;
+            border: none;
+        }
+
+        .signup-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .signup-link:hover {
+            text-decoration: underline;
+        }
+        button{
+            color:black;
+            height: 50px;
+            width: 100%;
+            background-color: white;
+            border-radius: 50px;        
+        }
+
+        @media only screen and (max-width: 600px){
+        .container{
+            margin-left:0px;
+          }
+        }
+
+        div input{
+            height: 40px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .btn-back {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.3);
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-back:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+            filter: brightness(1.2);
+        }
+    </style>
+</head>
+<body class="bg-success">
+    <div class="container mt-5">
+        <img src="outdoor2.jpeg" alt="Background Image" class="background-image"> 
+        <h2 style="margin-top: -5px; font-family:forte; font-size: 45px; color: brown">Member Login</h2>
+        <form>
+            <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email" required>
+            </div>
+
+            <div class="mb-3">
+                <input type="password" class="form-control" placeholder="Password" required>
+            </div>
+
+            <button type="submit" class="btn btn-success">Login</button>
+        </form>
+        <p class="mt-3">Or log in with</p>
+        <div class="d-flex justify-content-center">
+            <button class="btn btn-social btn-facebook"><i class="fab fa-facebook-f"></i> Facebook</button>
+            <button class="btn btn-social btn-google"><i class="fab fa-google"></i> Google</button>
+        </div>
+        <p class="mt-3">Don't have an account? <a href="#" class="signup-link">Sign up</a></p>
+
+        <div class="mt-4">
+            <button class="btn btn-back">
+                <a href="index.html" class="text-decoration-none"><i class="fa-solid fa-rotate-left" style="font-size: 20px; margin-right: 10px;"></a></i>
+                Click For Back
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
